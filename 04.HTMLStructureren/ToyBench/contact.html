@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Ol' Toy Bench</h1>
+      <p>A second life for timeless toys</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header >
+
+  <main>
+
+    <figure>
+      <section class="filters">
+        <h2><span class="material-symbols-outlined">filter_alt</span> Filters</h2>
+        <label for="category">Categorie: </label>
+        <select id="category">
+          <option value="-1">selecteer...</option>
+          <option value="0">Dolls</option>
+          <option value="1">Cars</option>
+          <option value="2">games</option>
+        </select>
+      </section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5016.326454259285!2d3.7295671999999995!3d51.0500738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3714f030e0893%3A0xb9d4cbe0624bbc04!2sBrabantdam%2070%2C%209000%20Gent!5e0!3m2!1snl!2sbe!4v1760725063963!5m2!1snl!2sbe"
+          width="600" height="450" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+          <label for="Name">Naam:</label><br>
+          <input type="text" id="Name" placeholder="e.g: Jan Jan"><br>
+          <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="e.g: jan@gmail.com"><br>
+
+            <div>
+              <label for="Phone">Phone:</label><br>
+              <input type="tel" id="Phone" placeholder="e.g: 0411/22.33.44"><br>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="desc"></label>
+          <textarea id="desc" cols="40" rows="5" required></textarea>
+          <div>
+            <button type="submit">Verzenden</button>
+          </div>
+        </div>
+    </figure>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Ol' Toy Bench - Alle rechten voorbehouden</p>
+  </footer>
+
+</body>
+
+</html>
