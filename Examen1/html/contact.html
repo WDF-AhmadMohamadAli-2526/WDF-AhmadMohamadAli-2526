@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <p><a href="index.html"><img src="img/logo.png" alt="loge"></a></p>
+
+    <form action="#">
+        <p>Heb je een vraag, suggestie of wil je reserveren? Vul het formulier in en we nemen snel contact met je op.
+        </p>
+
+        <fieldset>
+            <legend>Jouw gegeven</legend>
+            <div>
+                <label for="naam">Naam: *</label>
+                <input type="text" id="naam" autofocus placeholder="voornaam Achternaam">
+            </div>
+            <div>
+                <label for="email">Email: *</label>
+                <input type="email" id="email" autofocus placeholder="naam@voorbeeld.be">
+            </div>
+            <div>
+                <label for="telefoon">Telefoon:</label>
+                <input type="tel" id="mobile" autofocus placeholder="+32 4 ...">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Je bericht</legend>
+            <label for="education">Onderwerp</label>
+            <select id="education">
+                <option value="-1">Algemen vraag</option>
+                <option value="0">Reservatie</option>
+                <option value="1">Evenement</option>
+                <option value="2">Sollicitatie</option>
+            </select>
+            <div>
+                <label>Contactvoorkeur</label>:
+                <label><input type="radio" name="contact" value="email" checked> E-mail</label>
+                <label><input type="radio" name="contact" value="telefoon">Telefoon</label>
+            </div>
+            <div>
+                <label for="desc">Bricht *</label>
+                <textarea id="desc" cols="40" rows="5" aria-autocomplete="Typ je boodschap..."></textarea>
+                <label><input type="radio" name="niews" value="" checked> Ik wil de nieuwsbrief ontvangen
+                </label>
+                <label><input type="radio" name="akkord" value="akkord">Ik ga akkoord met de verwerking van mijn
+                    gegevens
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Verzenden</button>
+            <button type="reset">Wissen</button>
+
+        </div>
+    </form>
+    <h2>Vind ons</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.448383817981!2d4.699933800000001!3d50.87841110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c160d851703f0d%3A0xe802d373119b0717!2sOude%20Markt%201%2C%203000%20Leuven!5e0!3m2!1sen!2sbe!4v1762251353506!5m2!1sen!2sbe"
+        width="600" height="450" title="address" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <footer>
+        <address>
+            <p><a href="contact.html">🗺️</a>Oude Markt 1, 3000 Leuven</p>
+            <p><a href="mailto">&#x2709;;</a>hallo@caffeluna.tld</p>
+            <p><a href=" tel">&#128222;</a> 0412/34.56.78</p>
+        </address>
+        <p>Open van maandag tot zaterdag, 8u tot 18u.
+        </p>
+        <p>Zondag gesloten.</p>
+        <p>&COPY;<small>Caffè Luna - Alle rechten voorbehouden</small></p>
+    </footer>
+</body>
+
+</html>
