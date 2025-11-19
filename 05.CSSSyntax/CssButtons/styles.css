@@ -1,0 +1,122 @@
+
+/*  GENERAL TEXT STYLES */
+
+
+body {
+    font-family: "Libre Baskerville", serif;
+    padding: 40px;
+    color: #000;
+}
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+}
+
+/* Remove underline */
+a {
+    text-decoration: none;
+}
+
+
+
+/*      GREEN BUTTON    */
+
+
+.btnGreen {
+    display: inline-block;
+    background: #A9C45A;
+    color: #fff;
+    font-family: "Google Sans Code", monospace;
+    padding: 18px 40px;
+    border-radius: 8px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.25s;
+}
+.btnFav:active {
+    transform: scale(0.92);
+    color: #000; 
+    transition: transform 0.1s ease;
+    
+}
+
+
+.btnGreen::after {
+    content: "→";
+    margin-left: 16px;
+    font-size: 28px;
+    transition: transform 0.25s;
+    color: #fff;
+    
+}
+
+.btnGreen:hover {
+    background: #9DB84F;
+    transform: scale(1.15);
+     color: #000;
+    background: #9DB84F;
+}
+
+.btnGreen:hover::after {
+    color: #000; 
+    transform: translateX(4px);
+}
+
+
+
+/*   FAVORIET BUTTON    */
+
+
+.btnFav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    background: #E7DAC8;
+    border-radius: 50%;
+    font-size: 42px;
+    color: #B01713;
+    transition: transform 0.2s;
+}
+
+.btnFav:hover {
+    transform: scale(1.35);
+}
+
+
+
+/*    TIKTOK BUTTON     */
+
+
+.btnTiktok {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #EDEDED;
+    padding: 25px 40px;
+    border-radius: 6px;
+    font-family: "Google Sans Code", monospace;
+    font-size: 30px;
+    color: #444;
+    transition: 0.25s;
+}
+
+.btnTiktok::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url("logo-tiktok.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btnTiktok:hover {
+    background: #e2e2e2;
+    text-decoration: underline;
+    transform: scale(1.15);
+}
