@@ -1,0 +1,147 @@
+/**
+ * Start Styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ *
+ */
+
+/* ===========================================
+   Reset
+   =========================================== */
+
+   img {
+      border: 0;
+   }
+   
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+   }
+   
+   /* ===========================================
+      General
+      =========================================== */
+   
+   html {
+      padding-top: 20px;
+   }   
+   
+   body {
+      margin: 0 auto;
+      max-width: 960px;
+   }
+   
+   /* ===========================================
+      Header
+      =========================================== */
+   
+   /* general */
+   
+   header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+   }
+   
+   /* logo */
+   
+   header h1 img {
+      display: block;
+   }
+   
+   header h1 span {
+      display: none;
+   }
+   
+   /* ===========================================
+      Banner
+      =========================================== */
+   
+   #banner {
+      border: 1px solid #ccc;
+      height: 280px;
+      position: relative;
+   }
+   
+   #banner p {
+      bottom: 0;
+      left: 0;
+      padding: 15px;
+      position: absolute;
+      right: 0;
+   }
+   
+   /* ===========================================
+      Content
+      =========================================== */
+   
+   /* general */
+   
+   main {
+      display: flex;
+      padding: 60px 40px;
+   }
+   
+   main h3 {
+      margin-bottom: 16px;
+   }
+   
+   main p {
+      margin-bottom: 10px;
+   }
+   
+   main ul {
+      margin-bottom: 10px;
+      padding-left: 2em;
+   }
+   
+   main #content {
+      margin-right: 5%;
+      width: 70%;
+   }
+   
+   main aside {
+      width: 25%;
+   }
+   
+   /* content */
+   
+   #content section {
+      margin-bottom: 20px;
+   }
+   
+   #content .minibanner {
+      float: left;
+      margin-right: 15px;
+      padding: 5px;
+      width: 50%;
+   }
+   
+   /* aside */
+   
+   aside img {
+      margin-bottom: 10px;
+      max-width: 100%;
+   }
+   
+   /* newsletter */
+   
+   aside input,
+   aside button {
+      border: 1px solid #E2C7C8;
+      padding: 8px 10px;
+   }
+   
+   aside input[type=text] {
+      margin-bottom: 5px;
+   }
+   
+   /* footer */
+   
+   footer {
+      padding: 20px;
+   }
+   
+   
