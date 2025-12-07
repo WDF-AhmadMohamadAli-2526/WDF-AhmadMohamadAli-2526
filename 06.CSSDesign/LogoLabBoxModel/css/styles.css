@@ -1,139 +1,68 @@
-/* ALGEMENE AANPASSINGEN */
-
-.wrapper {
-  margin: 0 auto;
-  padding: 0 15px;
+nav > ul >  li > a{
+    border:hidden;
+    margin: auto;
+    padding: 10px 20px;
+  
+}
+#slogan
+{
+    margin-top: 15px;
+    
 }
 
-/* HEADER */
-
-header .wrapper {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 0; 
+.wrapper  img
+{
+    margin-bottom: 25px;
 }
 
-#topbar {
-  padding-bottom: 10px; 
-  margin-bottom: 0;
+
+#social  li 
+{
+    margin: 15px;
+    padding-left: 82px;
+    padding-top: 20px;
+    padding-right: 30px;
+    text-align:start;
+    
+}
+#bestelnu
+{
+    padding-left: 15px;
+}
+.wrapper h2
+{
+    margin: 25px;
+
 }
 
-nav ul {
-  margin-left: 0;
-  padding-left: 0;
+.recent img
+{
+    border:white solid 10px;
 }
-
-nav li {
-  margin-right: 15px; 
+.recent h3 , .recent p
+{
+    margin: 0 20px 20px 0 ;
 }
-
-nav li:last-child {
-  margin-right: 0;
+.recent .button
+{
+    font-size: 15px;
+    margin:0 20px 20px 0 ;
+    padding: 10px 20px;
 }
-
-#slogan {
-  padding-right: 20px; 
-  margin-bottom: 0;
+footer li
+{
+    border-bottom:solid #dedede;
+    padding: 15px 0;
 }
-
-#einstein {
-  margin-left: 20px; 
-  padding-top: 5px;
+footer
+{  
+    border-top:solid #dedede;
+    margin: 20px; 
 }
+footer h3 
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px 0;
 
-/* MAIN */
-
-main .wrapper {
-  margin-top: 40px;
-  padding-bottom: 150px;
-}
-
-main section {
-  padding-right: 40px; 
-  margin-bottom: 0;
-}
-
-main .recent {
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 0;
-}
-
-main .recent > div {
-  padding-right: 20px;
-  margin-bottom: 0;
-}
-
-.logo_visual {
-  margin-bottom: 10px;
-}
-
-main h2 {
-  margin-bottom: 15px;
-  padding-left: 0;
-}
-
-main h3 {
-  margin-bottom: 10px;
-  padding-left: 0;
-}
-
-main p {
-  margin-bottom: 10px;
-}
-
-main aside {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-#bestelnu {
-  margin-bottom: 20px;
-}
-
-#social li {
-  margin-bottom: 15px;
-  padding-left: 80px; 
-  border: none;
-}
-
-#social li:last-child {
-  margin-bottom: 0;
-}
-
-/* FOOTER */
-
-footer .wrapper {
-  padding-top: 80px;
-  margin-top: 0;
-  border-top: 1px  solid #ddd;
-}
-
-footer section {
-  margin-right: 20px;
-  padding-right: 0;
-  border: none;
-}
-
-footer section:last-child {
-  margin-right: 0;
-}
-
-footer h3 {
-  margin-bottom: 15px;
-  padding-left: 0;
-}
-
-footer ul {
-  padding-left: 0;
-  margin-top: 0;
-}
-
-footer li {
-  margin-bottom: 10px;
-  padding-left: 0;
-}
-
-footer li:last-child {
-  margin-bottom: 0;
 }
