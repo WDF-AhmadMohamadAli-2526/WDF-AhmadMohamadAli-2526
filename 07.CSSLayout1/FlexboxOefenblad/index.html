@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox mini-oefeningen</title>
+	<link rel="stylesheet" href="css/start.css">
+	<link rel="stylesheet" href="css/oplossingen.css">
+</head>
+
+<body>
+
+	<header class="page-header">
+		<h1>Flexbox mini-oefeningen</h1>
+		<p>Werk enkel in <code>css/oplossingen.css</code>. Elke section is een aparte oefening.</p>
+		<p>Een screenshot van het eindresultaat <a href="screenshot.png">vind je hier</a>.</p>
+	</header>
+
+
+	<!-- 1. NAVIGATIE -->
+	<section class="exercise" id="ex1">
+		<h2>1. Navigatiebalk</h2>
+		<p class="goal">Doel: flex container maken, tussenruimte maken, horizontaal uitlijnen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak met <code>display</code> van <code>ul</code> een flex-container zodat de links naast elkaar
+					staan.</li>
+				<li>Voorzie <strong>20px</strong> ruimte tussen de links met <code>gap</code>.</li>
+				<li>Centreer alles horizontaal met <code>justify-content</code>.</li>
+			</ol>
+		</div>
+
+		<nav class="menu">
+			<ul>
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">Over ons</a></li>
+				<li><a href="#">Producten</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</section>
+
+
+	<!-- 2. FOTOGALLERIJ -->
+	<section class="exercise" id="ex2">
+		<h2>2. Fotogallerij</h2>
+		<p class="goal">Doel: meerdere rijen, verschillende tussenruimtes tussen rijen en kolommen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak van <code>.gallery</code> een flex-container.</li>
+				<li>Zet foto’s op meerdere rijen met <code>flex-wrap</code>.</li>
+				<li>Gebruik <code>column-gap</code> en <code>row-gap</code> om 20px tussen rijen te zetten, en 10px
+					tussen kolommen.</li>
+			</ol>
+		</div>
+
+		<div class="gallery">
+			<img src="img/photo1.jpg" alt="">
+			<img src="img/photo2.jpg" alt="">
+			<img src="img/photo3.jpg" alt="">
+			<img src="img/photo4.jpg" alt="">
+			<img src="img/photo5.jpg" alt="">
+			<img src="img/photo6.jpg" alt="">
+			<img src="img/photo7.jpg" alt="">
+		</div>
+	</section>
+
+
+	<!-- 3. TAG CLOUD -->
+	<section class="exercise" id="ex3">
+		<h2>3. Tag cloud</h2>
+		<p class="goal">Doel: breedte beperken, meerdere lijnen, volledige content verticaal uitlijnen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Beperk de breedte van de container tot 600px met <code>max-width</code>.</li>
+				<li>Maak van de tags container een flex-container.</li>
+				<li>Zet tags op meerdere rijen.</li>
+				<li>Zet overal 8px tussenruimte.</li>
+				<li>Centreer de volledige content verticaal met <code>align-content</code>.</li>
+			</ol>
+		</div>
+
+		<div class="tags">
+			<span class="tag">HTML</span>
+			<span class="tag">CSS</span>
+			<span class="tag">JavaScript</span>
+			<span class="tag">Webdesign</span>
+			<span class="tag">API</span>
+			<span class="tag">Database</span>
+			<span class="tag">NodeJS</span>
+			<span class="tag">UX</span>
+			<span class="tag">UI</span>
+			<span class="tag">Accessibility</span>
+			<span class="tag">Responsive</span>
+			<span class="tag">Semantic HTML</span>
+			<span class="tag">Flexbox</span>
+			<span class="tag">Grid</span>
+			<span class="tag">SASS</span>
+			<span class="tag">Bootstrap</span>
+			<span class="tag">Tailwind</span>
+			<span class="tag">Figma</span>
+			<span class="tag">Wireframes</span>
+			<span class="tag">REST</span>
+			<span class="tag">JSON</span>
+			<span class="tag">Git</span>
+			<span class="tag">GitHub</span>
+			<span class="tag">NPM</span>
+			<span class="tag">Express</span>
+			<span class="tag">Frontend</span>
+			<span class="tag">Backend</span>
+			<span class="tag">Fullstack</span>
+			<span class="tag">SEO</span>
+			<span class="tag">Performance</span>
+		</div>
+	</section>
+
+
+	<!-- 4. PRODUCTLIJST -->
+	<section class="exercise" id="ex4">
+		<h2>4. Productlijst</h2>
+		<p class="goal">Doel: meerdere rijen, breedte van de items</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container.</li>
+				<li>Zet producten op meerdere rijen.</li>
+				<li>Zet 10px tussen de rijen.</li>
+				<li>Zet producten zover mogelijk uit elkaar met <code>justify-content</code>.</li>
+				<li>Geef elk product een vaste breedte van 48% met <code>flex</code>.</li>
+			</ol>
+		</div>
+
+		<div class="products">
+			<div class="product">Product A</div>
+			<div class="product">Product B</div>
+			<div class="product">Product C</div>
+			<div class="product">Product D</div>
+		</div>
+	</section>
+
+	<!-- 5. SPRINGEN -->
+	<section class="exercise" id="ex5">
+		<h2>5. Springen</h2>
+		<p class="goal">Doel: individuele items verticaal uitlijnen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container; geef het een hoogte van 200px.</li>
+				<li>Aligneer alle afbeeldingen onderdaan met <code>align-items</code>.</li>
+				<li>Aligneer de springende figuren bovenaan met <code>align-self</code>.</li>
+			</ol>
+		</div>
+
+		<div class="jump-grid">
+			<img src="img/man1.png" alt="" class="man">
+			<img src="img/man3.png" alt="" class="man">
+			<img src="img/man2.png" alt="" class="man jump">
+			<img src="img/man4.png" alt="" class="man">
+			<img src="img/man5.png" alt="" class="man jump">
+			<img src="img/man1.png" alt="" class="man">
+			<img src="img/man4.png" alt="" class="man">
+			<img src="img/man3.png" alt="" class="man">
+		</div>
+	</section>
+
+	<!-- 6. CHATBERICHTEN -->
+	<section class="exercise" id="ex6">
+		<h2>6. Chatberichten</h2>
+		<p class="goal">Doel: verticaal plaatsen, individuele items horizontaal uitlijnen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container.</li>
+				<li>Zet het in kolomrichting met <code>flex-direction</code>.</li>
+				<li>Geef een 8px tussenruimte.</li>
+				<li>Gebruik <code>align-self</code> om de grijze berichten links, en nog eens om de groene berichten
+					rechts te zetten.</li>
+			</ol>
+		</div>
+
+		<div class="chat">
+			<div class="msg left">Hey!</div>
+			<div class="msg right">Hallo, alles goed?</div>
+			<div class="msg left">Ja hoor!</div>
+			<div class="msg right">Top 🙂</div>
+			<div class="msg right">Tot morgen</div>
+		</div>
+	</section>
+
+
+	<!-- 7. DRIE KOLOMMEN -->
+	<section class="exercise" id="ex7">
+		<h2>7. Drie kolommen</h2>
+		<p class="goal">Doel: kolombreedtes instellen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container.</li>
+				<li>Zet een 12px tussenruimte.</li>
+				<li>Maak de middelste kolom dubbel zo breed met <code>flex</code>.</li>
+			</ol>
+		</div>
+
+		<div class="stats">
+			<div class="block small">Users</div>
+			<div class="block big">Pageviews</div>
+			<div class="block small">Sales</div>
+		</div>
+	</section>
+
+
+	<!-- 8. CHECKOUT -->
+	<section class="exercise" id="ex8">
+		<h2>8. Checkout</h2>
+		<p class="goal">Doel: items horizontaal en verticaal uitlijnen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container.</li>
+				<li>Zet de items horizontaal uit elkaar.</li>
+				<li>Zet de items verticaal onderaan met <code>align-items</code>.</li>
+			</ol>
+		</div>
+
+		<div class="checkout">
+			<span>Totaal:</span>
+			<strong>€39,90</strong>
+		</div>
+	</section>
+
+
+	<!-- 9. PROFIELKAART -->
+	<section class="exercise" id="ex9">
+		<h2>9. Profielkaart</h2>
+		<p class="goal">Doel: items centreren in een kolom</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex container; zet het in kolomrichting.</li>
+				<li>Zet 10px tussenruimte.</li>
+				<li>Centreer alle items horizontaal.</li>
+			</ol>
+		</div>
+
+		<div class="profile">
+			<img src="img/profile.jpg" alt="">
+			<h3>John Doe</h3>
+			<a href="#" class="follow button">Volgen</a>
+		</div>
+	</section>
+
+
+	<!-- 10. LAYOUT MET SIDEBAR, GECENTREERD -->
+	<section class="exercise" id="ex10">
+		<h2>10. Layout met sidebar, gecentreerd</h2>
+		<p class="goal">Doel: kolombreedtes instellen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Beperk de breedte van de wrapper tot maximaal 700px.</li>
+				<li>Centreer de wrapper horizontaal met <code>margin</code>.</li>
+				<li>Maak van de wrapper een flex-container.</li>
+				<li>Voorzie <code>30px</code> tussenruimte tussen sidebar en content.</li>
+				<li>Geef de sidebar een vaste breedte van 120px.</li>
+			</ol>
+		</div>
+
+		<div class="layout">
+			<div class="wrapper">
+				<aside class="sidebar">
+					<h2>Sidebar</h2>
+					<p>sidebar content hier...</p>
+				</aside>
+				<main class="content">
+					<h2>Hoofdinhoud</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae labore earum dolor aliquid,
+						reprehenderit a.
+					</p>
+				</main>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- 11. KEYWORDS -->
+	<section class="exercise" id="ex11">
+		<h2>11. Keywords</h2>
+		<p class="goal">Doel: meerdere rijen, horizontaal centreren</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container.</li>
+				<li>Zet items op meerdere rijen.</li>
+				<li>Zet overal 12px witruimte tussen.</li>
+				<li>Centreer de items.</li>
+			</ol>
+		</div>
+
+		<div class="features">
+			<div class="item">🔒 Veilig</div>
+			<div class="item">⚡ Snel</div>
+			<div class="item">📱 Mobile</div>
+			<div class="item">☁️ Cloud</div>
+			<div class="item">💬 Support</div>
+		</div>
+	</section>
+
+
+	<!-- 12. BESTANDENLIJST -->
+	<section class="exercise" id="ex12">
+		<h2>12. Bestandenlijst</h2>
+		<p class="goal">Doel: order</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container.</li>
+				<li>Zet de items in kolomrichting.</li>
+				<li>Zorg voor 6px tussenruimte.</li>
+				<li>Laat het element met class <code>.sticky</code> als eerste verschijnen via <code>order: -1</code>.
+				</li>
+			</ol>
+		</div>
+
+		<div class="files">
+			<div class="file">foto.png</div>
+			<div class="file sticky">contract.pdf</div>
+			<div class="file">notes.txt</div>
+		</div>
+	</section>
+
+
+	<!-- 13. VIEWER MET THUMBNAILS -->
+	<section class="exercise" id="ex13">
+		<h2>13. Viewer met thumbnails</h2>
+		<p class="goal">Doel: geneste flexboxen</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak van de viewer een flex-container.</li>
+				<li>Zet het in kolomrichting.</li>
+				<li>Maak van de rij met thumbs onderaan een flex-container.</li>
+				<li>Zet 10px tussenruimte tussen de thumbnails.</li>
+				<li>Centreer de thumbnailrij.</li>
+			</ol>
+		</div>
+
+		<div class="viewer">
+			<img class="big" src="img/huis.jpg" alt="">
+			<div class="thumb-row">
+				<div><img src="img/badkamer.jpg" alt=""></div>
+				<div><img src="img/gang.jpg" alt=""></div>
+				<div><img src="img/living.jpg" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- 14. PRODUCTINFO -->
+	<section class="exercise" id="ex14">
+		<h2>14. Productinfo</h2>
+		<p class="goal">Doel: align-items, gap, flex, order</p>
+
+		<div class="assignment">
+			<ol>
+				<li>Maak de flex-container.</li>
+				<li>Centreer de items verticaal.</li>
+				<li>Geef 20px tussenruimte.</li>
+				<li>Stel de drie breedtes in: afbeelding is 120px vast, de knop is de breedte van de content, en het
+					middenstuk neemt de rest in.</li>
+			</ol>
+		</div>
+
+		<div class="product-card">
+			<div class="prod-img">
+				<img src="img/vaas.jpg" alt="">
+			</div>
+			<div class="info">
+				<h4>Productnaam</h4>
+				<p>Korte beschrijving van dit item.</p>
+			</div>
+			<div class="buy"><a href="#" class="button">Koop nu</a></div>
+		</div>
+	</section>
+
+
+	<footer class="page-footer">
+		<p>Flexbox mini-oefeningen — bewerk enkel de TODO’s in oplossingen.css.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+/**
+ * Start Styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ *
+ */
+
+/* RESET */
+/* ===== */
+
+img {
+   border: 0;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/* GENERAL */
+/* ======= */
+
+body {
+   color: #666666;
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 12px;
+}
+
+.wrapper {
+   padding: 0 20px;
+}
+
+a {
+   color: #982216;
+   text-decoration: none;
+}
+
+a:hover, a:focus {
+   text-decoration: underline;
+}
+
+p {
+   margin-bottom: 10px;
+}
+
+h2 {
+   margin-bottom: 1em;
+}
+
+h3, h4 {
+   margin-bottom: 5px;
+}
+
+/* HEADER */
+/* ====== */
+
+header {
+   background-color: #ffe;
+   border-bottom: 1px solid #CCCCCC;
+   margin-bottom: 30px;
+}
+
+#logo {
+   padding: 40px 0;
+}
+
+nav a {
+   font-family: Georgia, serif;
+   font-size: 14px;
+}
+
+nav a:hover, nav a:focus {
+   text-decoration: none;
+}
+
+nav ul {
+   list-style: none;
+}
+
+nav li a {
+   border-top: 2px solid #fff;
+   color: #666;
+   display: block;
+   font-weight: bold;
+   padding-top: 8px;
+   text-transform: uppercase;
+}
+
+nav li span {
+   color: #999;
+   display: block;
+   margin-top: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   text-transform: lowercase;
+}
+
+nav li a:hover, nav li.active a {
+   border-top-color: #982216;
+}
+
+/* MAIN */
+/* ====== */
+
+/* gallery */
+
+#gallery {
+   margin-bottom: 30px;
+   padding: 30px 0;
+}
+
+#gallery section {
+   padding-bottom: 50px;
+}
+
+#gallery ul {
+   list-style: none;
+}
+
+#gallery img {
+   border: 1px solid #982216;
+   display: block;
+   padding: 8px;
+}
+
+#gallery a {
+   color: #982216;
+   display: block;
+   font-weight: bold;
+   padding: 5px;
+   text-align: center;
+   width: 100%;
+}
+
+/* CONTENT */
+/* ======= */
+
+main {
+   line-height: 1.6;
+   padding-bottom: 60px;
+}
+
+main h2 {
+   border-bottom: 1px dotted #CCCCCC;
+   color: #666;
+   font-family: Georgia, "Times New Roman", serif;
+   font-size: 20px;
+   font-weight: normal;
+   padding-bottom: 8px;
+}
+
+main h3 {
+   font-size: 12px;
+   margin-top: 0;
+}
+
+/* content left */
+
+main .visual {
+   border: 1px solid #999;
+   padding: 5px;
+   width: 125px;
+}
+
+/* aside right */
+
+aside section {
+   margin-bottom: 30px;
+}
+
+aside .thumb {
+   border: 1px solid #999;
+   display: block;
+   height: 90px;
+   padding: 4px;
+   width: 90px;
+}
+
+aside .readmore {
+   text-align: right;
+}
+
+/* DOORMAT */
+/* ======= */
+
+#doormat {
+   background-color: #eee;
+   padding: 40px 0;
+}
+
+#doormat ul {
+   list-style: none;
+}
+
+#doormat li {
+   margin: 8px 0;
+}
+
+/* FOOTER */
+/* ======= */
+
+footer {
+   background-color: #000;
+   color: #fff;
+   padding: 20px 0;
+}
+
+footer a {
+   color: #fff;
+}
+
+footer p {
+   margin: 0;
+}

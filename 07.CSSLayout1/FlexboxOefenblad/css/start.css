@@ -1,0 +1,57 @@
+/**
+ * Start Styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ *
+ */
+
+/* =========================================
+   Algemene CSS; dit bestand NIET aanpassen.
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  color: #222;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+.page-header,
+.page-footer {
+  background: #111;
+  color: white;
+  padding: 16px 20px;
+}
+
+.page-header a {
+	color: #eee;
+}
+
+
+.page-header h1 {
+  margin: 0 0 6px 0;
+}
+
+.exercise {
+  background: white;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 18px 20px;
+}
+
+.exercise h2 {
+  margin-top: 0;
+}
+
+.goal {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.exercise > *:last-child {
+  margin-bottom: 0;
+}
