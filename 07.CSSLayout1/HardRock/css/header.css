@@ -1,0 +1,33 @@
+/**
+ * Header styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ *
+ */
+
+header {
+	background: linear-gradient(0deg, rgb(200 200 200) 35%, rgb(240 240 240) 85%);
+	padding: 20px 30px;
+}
+
+/* logo */
+
+.logo h1 {
+	font-size: 48px;
+}
+
+.logo h1 a {
+	color: #333;
+	font-family: 'Special Elite', cursive;
+}
+
+.logo h1 a:hover {
+	text-decoration: none;
+}
+
+.logo p {
+	font-size: 14px;
+	color: #555;
+	font-style: italic;
+}
+

@@ -1,0 +1,18 @@
+/**
+ * Main styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ *
+ */
+
+main {
+	background-color: #fff;
+	padding: 20px 30px;
+	padding-bottom: 50px;
+}
+
+main p {
+	color: #666;
+	line-height: 20px;
+}
+

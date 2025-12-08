@@ -1,0 +1,102 @@
+/**
+ * Common styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ *
+ */
+
+/* general */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+html {
+	background-color: #f5f5f5;
+}
+
+/* elements */
+
+a {
+	color: #17a348;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #14833b;
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+	color: #333;
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+/* classes */
+
+a.lnk-cta {
+	font-size: 20px;
+}
+
+a.lnk-cta::after {
+	content: " »";
+}
+
+.btn-cta {
+	background-color: #17a348;
+	border-bottom: 3px solid rgb(0 0 0 / 15%);
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 8px 16px;
+	text-transform: uppercase;
+	transition: background 0.5s;
+	white-space: nowrap;
+	width: fit-content;
+}
+
+a.btn-cta {
+	text-decoration: none;
+}
+
+a.btn-cta:hover {
+	color: #fff;
+}
+
+.btn-cta:hover {
+	background-color: #14833b;
+}

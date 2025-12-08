@@ -1,0 +1,40 @@
+/**
+ * Contact styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ *
+ */
+
+/* main */
+
+main h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* top */
+
+address {
+	font-size: 14px;
+	font-style: normal;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+/* form */
+
+form label {
+	font-size: 16px;
+	font-style: italic;
+}
+
+form input,
+form textarea {
+	padding: 3px 5px;
+}
+
+/* iframe */
+
+iframe {
+	border: none;
+}

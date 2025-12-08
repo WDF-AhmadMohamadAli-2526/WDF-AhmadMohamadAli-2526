@@ -1,0 +1,47 @@
+/**
+ * Index styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ *
+ */
+
+/* banner */
+
+#banner {
+	background-image: url(../../img/banner.jpg);
+	background-size: cover;
+	padding: 20px;
+}
+
+.box {
+	background-color: #6669;
+	padding: 20px;
+}
+
+.box .btn-cta {
+	font-size: 18px;
+	padding: 14px 60px;
+}
+
+.box .btn-cta:hover {
+	color: white;
+}
+
+.box p {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+/* aside */
+
+aside h3 a {
+	color: #333;
+	border-bottom: 1px solid #cccccc;
+}
+
+aside h3 a:hover {
+	text-decoration: none;
+	color: #be0a35;
+}

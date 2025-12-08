@@ -1,0 +1,19 @@
+/**
+ * Navigation styles
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@odisee.be>
+ *
+ */
+
+#mainmenu a {
+	color: #000;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+#mainmenu a:hover,
+#mainmenu .active a {
+	color: #14833b;
+	text-decoration: none;
+}
+
