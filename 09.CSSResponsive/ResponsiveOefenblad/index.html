@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive oefenblad</title>
+	<link rel="stylesheet" href="css/start.css">
+	<link rel="stylesheet" href="css/oplossingen.css">
+</head>
+
+<body>
+
+	<header class="page-header">
+		<h1>Responsive – oefenblad</h1>
+		<p>
+			Werk enkel in <code>css/oplossingen.css</code>.
+			Een screenshot van het eindresultaat vind je hier voor <a href="screenshot-1200px.png">1200px</a>, <a href="screenshot-800px.png">800px</a>, <a href="screenshot-650px.png">650px</a>, <a href="screenshot-550px.png">550px</a>.
+		</p>
+	</header>
+	<main>
+
+
+		<!-- FLEXIBELE BOX -->
+		<section class="exercise" id="ex1">
+			<h2>Flexibele box</h2>
+			<p class="goal">Doel: flexibele box met maximum breedte maken.</p>
+
+			<div class="assignment box">
+				<p>De box hieronder heeft nu een vaste breedte van <strong>960px</strong>. Als het scherm te smal is, verschijnt een horizontale scrollbar. We passen dit aan.</p>
+				<ol>
+					<li>Zorg dat de box nooit breder wordt dan de container met <code>max-width: 100%</code>.</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-wrapper">
+				<div class="wrapper-box">
+					Flexibele wrapper. Probeer het venster smaller en breder te maken.
+				</div>
+			</div>
+		</section>
+
+		<!-- FLEXIBELE AFBEELDING -->
+		<section class="exercise" id="ex2">
+			<h2>Flexibele afbeelding</h2>
+			<p class="goal">Doel: breedte afbeelding beperken en flexibel maken.</p>
+
+			<div class="assignment box">
+				<p>Net zoals bij de vorige oefening, stellen we een vaste breedte in, maar beperken het tot 100% van de breedte van de container zodat het ook kleiner kan worden.</p>
+				<ol>
+					<li>Geef de afbeelding een vaste breedte van <strong>450px</strong>.</li>
+					<li>Zorg dat de afbeelding nooit breder wordt dan de container.</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-image">
+				<img class="demo-photo" src="img/schaken.jpg" alt="Demo afbeelding">
+			</div>
+		</section>
+
+		<!-- ACHTERGRONDKLEUR -->
+		<section class="exercise" id="ex3">
+			<h2>Veranderende achtergrondkleur</h2>
+			<p class="goal">Doel: werken met één media query.</p>
+
+			<div class="assignment box">
+				<p>De box hieronder heeft standaard een <strong>lichtgrijze</strong> achtergrond; we willen een lichtblauwe kleur op bredere schermen. Er is reeds een media query voorzien voor <strong>600px</strong>.</p>
+				<ol>
+					<li>Voeg in de media query code toe om vanaf die schermbreedte de achtergrond <strong>lichtblauw</strong> (<code>#def</code>) te maken.</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-bgcolor">
+				<p>Deze achtergrondkleur verandert vanaf 600px van grijs naar blauw.</p>
+			</div>
+		</section>
+
+		<!-- VERANDERENDE TEKSTOPMAAK -->
+		<section class="exercise" id="ex4">
+			<h2>Veranderende tekstopmaak</h2>
+			<p class="goal">Doel: werken met meerdere media queries.</p>
+
+			<div class="assignment box">
+				<p>We werken met twee media queries: 600px en 900px. Werk altijd <em>mobile-first</em>: sorteer breekpunten van klein naar groot, en gebruik enkel <code>@media (width &gt;= ...)</code>.</p>
+				<ol>
+					<li>Voeg media queries toe voor <strong>600px</strong> en <strong>900px</strong></li>
+					<li>Op kleine schermen is de lettergrootte <strong>22px</strong>.</li>
+					<li>Vanaf <strong>600px</strong> breedte moet de tekst <strong>12px</strong> en <strong>schuin</strong> worden.</li>
+					<li>Vanaf <strong>900px</strong> breedte moet de tekst <strong>16px</strong> worden, <strong>niet schuin</strong> en <strong>donkerrood</strong> (<code>#600</code>).</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-fontsize">
+				<p class="demo-text-size">
+					Deze tekst verandert van opmaak bij verschillende schermbreedtes.
+				</p>
+			</div>
+		</section>
+
+		<!-- HEADER-HOOGTE -->
+		<section class="exercise" id="ex5">
+			<h2>Header hoogte</h2>
+			<p class="goal">Doel: hoogte flexibel maken.</p>
+
+			<div class="assignment box">
+				<p>De header hieronder heeft een vaste hoogte van <strong>180px</strong>. Maak het scherm smaller; een deel van de tekst zal verdwijnen. Dit kan beter.</p>
+				<ol>
+					<li>Vervang de vaste hoogte van de header door een minimum hoogte.</li>
+					<li>Verander vanaf <strong>900px</strong> de padding boven en onder naar 40px.</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-header-height">
+				<div class="demo-header-box">
+					<h3>Demo header</h3>
+					<p>Deze header heeft veel tekst. Met een vaste hoogte zal bij smalle schermen een deel van de tekst onderaan buiten de header vallen. Dit is uiteraard niet de bedoeling! Dit passen we aan, door te werken met een flexibele hoogte, waarbij we in plaats van een vaste hoogte een minimum hoogte instellen. Om af te werken maken we de padding wat groter bij bredere schermen.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- RESPONSIVE KOLOMMEN -->
+		<section class="exercise" id="ex6">
+			<h2>Responsive kolommen</h2>
+			<p class="goal">Doel: CSS code verplaatsen van standaard CSS naar media query CSS.</p>
+
+			<div class="assignment box">
+				<p>Op dit moment staan sidebar en hoofdlayout altijd naast elkaar. Dit willen we aanpassen, zodat ze standaard onder elkaar staan, en pas vanaf 700px naast elkaar.</p>
+				<ol>
+					<li>Maak een media query voor <strong>700px</strong>.</li>
+					<li>Verplaats de flex-code die verantwoordelijk is voor de twee kolommen naar deze media query, zodat het pas vanaf 700px uitgevoerd wordt.</li>
+					<li>Verbeter het met een <strong>10px margin</strong> onder de sidebar bij kleine schermen, en vanaf 700px niet meer.</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-layout">
+				<div class="two-col-layout">
+					<div class="col left">
+						<h3>Sidebar</h3>
+						<p>Korte navigatie, links, enz.</p>
+					</div>
+					<div class="col right">
+						<h3>Hoofdinhoud</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptas?
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- RESPONSIVE MENU -->
+		<section class="exercise" id="ex7">
+			<h2>Responsive menu</h2>
+			<p class="goal">Doel: navigatie responsive maken met <code>flex-direction</code>.</p>
+
+			<div class="assignment box">
+				<ol>
+					<li>Maak dit menu responsive: zet het verticaal en vanaf 600px horizontaal (gebruik <code>flex-direction</code>).</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-menu">
+				<div class="resp-menu">
+					<ul>
+						<li><a href="#" class="active">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Over</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- GRID MET VARIABEL AANTAL KOLOMMEN -->
+		<section class="exercise" id="ex8">
+			<h2>Grid met variabel aantal kolommen</h2>
+			<p class="goal">Doel: meerdere media queries combineren in een grid.</p>
+
+			<div class="assignment box">
+				<ol>
+					<li>Op kleine schermen toont het grid <strong>1 kolom</strong>.</li>
+					<li>Vanaf <strong>600px</strong> moeten er <strong>2 kolommen</strong> zijn.</li>
+					<li>Vanaf <strong>900px</strong> moeten er <strong>3 kolommen</strong> zijn.</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-cards">
+				<div class="cards">
+					<div class="card">Kaart 1</div>
+					<div class="card">Kaart 2</div>
+					<div class="card">Kaart 3</div>
+					<div class="card">Kaart 4</div>
+					<div class="card">Kaart 5</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- TAGLINE VERBERGEN / TONEN -->
+		<section class="exercise" id="ex9">
+			<h2>Tagline verbergen en tonen</h2>
+			<p class="goal">Doel: elementen verbergen op mobile en tonen vanaf een breekpunt.</p>
+
+			<div class="assignment box">
+				<ol>
+					<li>Verberg de tagline onder de titel op kleine schermen.</li>
+					<li>Vanaf <strong>600px</strong> moet de tagline getoond worden.</li>
+				</ol>
+			</div>
+
+			<div class="demo demo-tagline">
+				<div class="header-with-tagline">
+					<h3>My Travel Blog</h3>
+					<p class="header_tagline">Stories &amp; pictures from around the world</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="page-footer">
+		<p>Responsive oefenblad — bewerk enkel de TODO’s in oplossingen.css.</p>
+	</footer>
+
+</body>
+
+</html>

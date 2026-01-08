@@ -1,0 +1,91 @@
+/* ===========================================
+   Media queries
+   =========================================== */
+
+@media (width >= 500px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  /* comments pas tonen vanaf 500px */
+ 
+  .post .comments {
+    display: block;
+
+  }
+
+
+  
+  .post .footer {
+    justify-content: space-between;
+  }
+}
+
+@media (width >= 700px) {
+  /* footer pas vanaf 700px met flex layout */
+ 
+  body > footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ 
+ 
+  body > footer h2 {
+    text-align: right;
+  }
+
+ 
+ 
+  body > footer .buttons {
+    margin-bottom: 0;
+  }
+}
+
+@media (width < 700px) {
+
+ 
+  body > footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  body > footer h2 {
+    text-align: left;
+  }
+
+  body > footer .buttons {
+    margin-bottom: 20px;
+  }
+}
+
+@media (width >= 900px) {
+  /* menu horizontaal */
+ 
+  nav ul {
+    flex-direction: row;
+  }
+
+
+ 
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (width < 900px) {
+  /* menu verticaal op kleinere schermen */
+ 
+  nav ul {
+    flex-direction: column;
+  }
+
+ 
+ 
+  main {
+    display: block;
+  }
+}

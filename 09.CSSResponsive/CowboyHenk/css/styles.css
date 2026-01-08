@@ -1,0 +1,314 @@
+/**
+ * Styles for The Lonely Cowboy
+ *
+ * @author Rogier van der Linde
+ *
+ */
+
+
+/* ===========================================
+   Reset
+   =========================================== */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* ===========================================
+   General
+   =========================================== */
+
+/* elements */
+
+body {
+	background-color: #f1f1f1;
+	font-family: Raleway, sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+ul {
+	list-style: none;
+}
+
+/* general classes */
+
+.inverted {
+	background-color: #000;
+	color: #fff;
+	padding: 0 0.5em;
+}
+
+.card {
+	background: #fff;
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+	margin-bottom: 2em;
+}
+
+.cardtitle {
+	background-color: #f1f1f1;
+	font-size: 1.3em;
+	font-weight: 400;
+	padding: 0.7em 1em;
+}
+
+.container {
+	padding: 1em;
+}
+
+/* buttons */
+
+.button {
+	border: 1px solid #ccc;
+	color: #000;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	text-transform: uppercase;
+	transition: background 0.2s;
+}
+
+.button:not(.inactive):hover {
+	background-color: #ccc;
+}
+
+.button.inactive {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+
+.button--dark {
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+	padding: 0.6em 1.2em;
+}
+
+.button--dark:not(.inactive):hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+/* ===========================================
+   Header
+   =========================================== */
+
+header {
+	padding: 2em 1em;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 0.5em 0;
+	text-align: center;
+}
+
+/* animation */
+
+@keyframes stretch {
+
+	0% {
+		transform: scale(0, 0);
+	}
+}
+
+h1+p {
+	animation: stretch 2s;
+	margin: 1em 0 2em 0;
+	text-align: center;
+	transform: scale(1, 1);
+}
+
+/* nav */
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+
+nav li.active,
+nav li:hover {
+	background-color: #ccc;
+}
+
+nav a {
+	display: block;
+	padding: 0.5em 1em;
+}
+
+/* ===========================================
+   Main
+   =========================================== */
+
+main {
+	display: grid;
+	gap: 2em;
+	grid-template-columns: 2fr 1fr;
+	padding: 2em 1em;
+}
+
+/* left, blogposts */
+
+.post .title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.post .subtitle {
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 0.5em 0;
+}
+
+.post .content {
+	margin: 1.5em 0;
+}
+
+.post .date {
+	opacity: 0.60;
+}
+
+.post .footer {
+	align-items: end;
+	display: flex;
+	justify-content: space-between;
+}
+
+.post .badge {
+	background-color: #000;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	font-weight: normal;
+	height: 2em;
+	line-height: 2em;
+	margin-left: 1em;
+	text-align: center;
+	width: 2em;
+}
+
+.post .comments {
+	font-weight: bold;
+	display: none;
+}
+
+/* about me card */
+
+.about h3 {
+	font-size: 1.35em;
+	margin-bottom: 1em;
+}
+
+.about .content {
+	margin-bottom: 1em;
+}
+
+
+/* popular card */
+
+.popular .visual {
+	float: left;
+	margin-right: 1em;
+	width: 130px;
+}
+
+.popular .item {
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	padding: 16px;
+}
+
+.popular .item:hover {
+	background-color: #ccc;
+}
+
+.popular .title {
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+.popular .more {
+	color: #982216;
+	margin-left: 1em;
+}
+
+/* tags card */
+
+.card .taglist {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	padding: 16px;
+}
+
+.card .taglist a {
+	background-color: #f1f1f1;
+	color: #000;
+	display: inline-block;
+	font-size: 0.7em;
+	padding: 0.5em;
+}
+
+
+/* ===========================================
+   Footer
+   =========================================== */
+
+body>footer {
+	align-items: center;
+	background-color: #666;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 2em 1em;
+}
+
+body>footer a {
+	color: #fff;
+}
+
+body>footer .buttons {
+	display: flex;
+	gap: 0.5em;
+	justify-content: space-between;
+}
+
+/* social icons */
+
+#socialmenu {
+	display: flex;
+	gap: 1em;
+}
+
+body>footer h2 {
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+
+#socialmenu a {
+	font-size: 2em;
+}
