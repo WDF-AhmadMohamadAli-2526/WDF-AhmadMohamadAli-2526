@@ -1,0 +1,122 @@
+
+
+body{
+    background-color: #25050a;
+    color: #c0c0cf;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+h1,h2,h3{
+    color:#fff;
+    text-transform: uppercase;
+ 
+}
+
+.section-title{
+    font-size: 32px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    text-shadow: 5px 0 #00f2ff ;
+
+}
+
+.announcement-bar{
+    display: flex;
+    background-color: #b22cff;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    background-color: #0f0f0af2;
+    border-bottom: 1px solid #fff ;
+    position:fixed;
+    margin: auto;
+    padding: 0 0;
+    justify-content: space-between;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+h1>span{
+    color: #00f2ff;
+}
+
+nav{
+    display: flex;
+    justify-self: end;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-links{
+    list-style: none;
+    display:flex;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 14.4px;  
+}
+
+.nav-links li a.active,.nav-links li a:hover{
+    color:#00f2ff;
+    transition: 0.2s;
+    margin: 0 auto;
+}
+
+
+.hero{
+    height: 400px;
+    background-image: url(../img/festival.jpg);
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.hero-text{
+    background-color: rgb(204, 204, 204,80%);
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 30px;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.hero-text>h2{
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.btn-primary{
+    display: inline-block;
+    background-color: #05050a;
+    color: #00f2ff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding:12px 30px;
+}
+
+.main-footer{
+    padding: 40px 0;
+    grid-template-columns:auto 320px ;
+    
+
+}
