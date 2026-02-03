@@ -1,4 +1,4 @@
-# WDF-AhmadMohamadAli-2526
+# AhmadMohamadAli
 
 - Academiejaar: 2025-2026
 - Opleiding: toegepaste informatica
